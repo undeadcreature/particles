@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Ensure JavaScript files are counted
+*.js linguist-detectable=true
+
+# Ensure HTML files are also counted (but JavaScript takes priority if relevant)
+*.html linguist-detectable=true
+
+# Optionally, if you want GitHub to classify `.html` files as JavaScript (if the JavaScript is embedded in `<script>` tags):
+*.html linguist-language=JavaScript
+
